@@ -1,0 +1,14 @@
+name: fkbp_mc_analysis
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - seaborn
+  - matplotlib
+  - pandas
+  - notebook
+  - scikit-learn=1.5.1
+  - rdkit=2024.09.3
+  - mdtraj=1.10.3
+  - parmed=4.3.0
