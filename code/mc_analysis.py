@@ -265,7 +265,7 @@ def extract_hbond_data(simulation_dir, out_file):
     If the trajectories are not present (as in the github repository), try to load from precomputed data.
     """
     if not os.path.exists(simulation_dir):
-        print("Reading precomputed file")
+        print(f"Reading MD data file {out_file}")
         df = pd.read_csv(out_file)
         return df
     
@@ -323,7 +323,7 @@ def extract_scaffold_dihedrals(simulation_dir, out_file):
     If the trajectories are not present (as in the github repository), try to load from precomputed data.
     """
     if not os.path.exists(simulation_dir):
-        print("Reading precomputed file")
+        print(f"Reading MD data file {out_file}")
         df = pd.read_csv(out_file)
         return df
 
@@ -348,7 +348,7 @@ def extract_other_dihedrals(simulation_dir, out_file):
     If the trajectories are not present (as in the github repository), try to load from precomputed data.
     """
     if not os.path.exists(simulation_dir):
-        print("Reading precomputed file")
+        print(f"Reading MD data file {out_file}")
         df = pd.read_csv(out_file)
         return df
 
@@ -380,7 +380,7 @@ def extract_other_dihedrals_acyclic(simulation_dir, out_file):
     If the trajectories are not present (as in the github repository), try to load from precomputed data.
     """
     if not os.path.exists(simulation_dir):
-        print("Reading precomputed file")
+        print(f"Reading MD data file {out_file}")
         df = pd.read_csv(out_file)
         return df
 
