@@ -17,7 +17,8 @@ conda activate fkbp_mc_analysis
 ```
 
 ## Repository structure
-- `data` contains the starting points for the computational analysis, i.e. crystal structures of compounds **15a**, **29a** and **29b**, and the binding affinities of all compoounds.
+- `experimental_data` contains the starting points for the computational analysis, i.e. crystal structures of compounds **15a**, **29a** and **29b**, and the binding affinities of all compoounds.
+- `complex_pdb_models` contains pdb files of all the protein-ligand complex models used as starting structures for the MD simulations.
 - `code` contains:
     - GROMACS input files (topology + starting coordinates) both in water and in complex with FKBP51 for all systems, as well as MD parameters files `.mdp` in `md_input_files`
     - The `conformational_analysis.ipynb` notebook, a workflow that reproduces all the computational figures in the paper.
